@@ -18,10 +18,10 @@ let age = document.querySelector('#from').addEventListener('submit',(e)=>{
             this.gender=gender;
             this.occou=occou;
             this.age = ''
-        }
+        };
         ageCalculator(){
-            if(this.age= ''){
-                let birth= Date.now(this.dob);
+            if(this.age === ''){
+                let birth= new Date(this.dob);
                 let timeDeff= Date.now() - birth.getTime();
                 let ageInMillisecond= new Date(timeDeff);
                 let ageInYear= Math.abs(ageInMillisecond.getUTCFullYear() - 1970)
@@ -30,4 +30,7 @@ let age = document.querySelector('#from').addEventListener('submit',(e)=>{
             return this.age
         }
     }
+    let student1 =new student(fname, lname, email, phone, dob,gender, occou);
+    console.log(student1.ageCalculator())
+    console.log(student1)
 })
