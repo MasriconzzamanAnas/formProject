@@ -31,6 +31,6 @@ let age = document.querySelector('#from').addEventListener('submit',(e)=>{
         }
     }
     let student1 =new student(fname, lname, email, phone, dob,gender, occou);
-    console.log(student1.ageCalculator())
+    //console.log(student1.ageCalculator())
     console.log(student1)
 })
