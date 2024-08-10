@@ -7,7 +7,8 @@ let age = document.querySelector('#from').addEventListener('submit',(e)=>{
     const dob = document.querySelector('#dob').value;
     const gender = document.querySelector('#gender').value;
     const occou= document.querySelector('#occu').value;
-
+    
+    
     class student{
         constructor(fname,lname,email,phone,dob,gender,occou){
             this.fname=fname;
@@ -31,6 +32,8 @@ let age = document.querySelector('#from').addEventListener('submit',(e)=>{
         }
     }
     let student1 =new student(fname, lname, email, phone, dob,gender, occou);
-    //console.log(student1.ageCalculator())
+    student1.ageCalculator()
     console.log(student1)
 })
+
+
